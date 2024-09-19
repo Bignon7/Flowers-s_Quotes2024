@@ -1,0 +1,98 @@
+/* Style global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sofia", cursive; /* Utilisation de la police Poppins */
+  color: #333;
+}
+
+/* Style du body */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #9c59b65e, #3498db5e),
+    url("assets/img/flow17.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Conteneur de la citation */
+.quote-container {
+  background-color: transparent;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: move 4s infinite ease-in-out; /* Animation douce */
+}
+
+/* Style de la boîte contenant la citation */
+.quote-box {
+  margin-bottom: 20px;
+}
+
+/* Style du texte de la citation */
+#quote {
+  font-size: 1.8rem;
+  /* color: #2c3e50; */
+  color: #fff;
+}
+
+/* Style de l'auteur */
+#author {
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* color: #8e44ad; */
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+/* Style du bouton et du select*/
+button {
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #c0c9cf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+select {
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-right: 5px;
+  background-color: #c0c9cf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+select option {
+  background-color: #fff;
+}
+
+button:hover {
+  background-color: #96999b;
+}
+
+/* Animation pour la boîte de citation */
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
