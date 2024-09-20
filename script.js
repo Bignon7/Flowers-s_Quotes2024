@@ -59,15 +59,19 @@ document.addEventListener("DOMContentLoaded", function () {
     if (selector.value == "en") {
       generate.innerText = "Change";
       quote.innerText = "Click the button to generate a quote";
-      author.innerText = "-Author ";
+      author.innerText = "- Author ";
     } else if (selector.value == "es") {
       generate.innerText = "Cambiar";
       quote.innerText = "Haga clic en el botón para generar una cotización";
-      author.innerText = "-Autor ";
+      author.innerText = "- Autor ";
     } else if (selector.value == "fr") {
       generate.innerText = "Changer";
       quote.innerText = "Cliquez sur le bouton pour générer une citation";
-      author.innerText = "-Auteur ";
+      author.innerText = "- Auteur ";
+    } else if (selector.value == "kr") {
+      generate.innerText = "변화하다";
+      quote.innerText = "견적을 생성하려면 버튼을 클릭하세요.";
+      author.innerText = "- 작가 ";
     }
   });
 });
