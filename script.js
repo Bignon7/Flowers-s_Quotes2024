@@ -1,4 +1,8 @@
 import { quotes } from "./quotes.js";
+let generate = document.getElementById("generate");
+let selector = document.getElementById("selector");
+let quote = document.getElementById("quote");
+let author = document.getElementById("author");
 
 document.addEventListener("DOMContentLoaded", function () {
   const back = [
@@ -41,13 +45,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const random = Math.floor(Math.random() * quoteArray.length);
     let quoteSet = quoteArray[random];
     //console.log(quoteSet);
-    document.getElementById("quote").innerText = quoteSet["quote"];
-    document.getElementById("author").innerText = "-- " + quoteSet["author"];
+    quote.innerText = quoteSet["quote"];
+    author.innerText = "-- " + quoteSet["author"];
   }
-  document.getElementById("generate").addEventListener("click", () => {
-    let language = document.getElementById("selector").value;
+  generate.addEventListener("click", () => {
+    let language = selector.value;
     generateQuote(language);
     changeBack();
     //console.log(language);
+  });
+
+  selector.addEventListener("change", () => {
+    if (selector.value == "en") {
+      generate.innerText = "Change";
+      quote.innerText = "Click the button to generate a quote";
+      author.innerText = "-Author ";
+    } else if (selector.value == "es") {
+      generate.innerText = "Cambiar";
+      quote.innerText = "Haga clic en el botón para generar una cotización";
+      author.innerText = "-Autor ";
+    } else if (selector.value == "fr") {
+      generate.innerText = "Changer";
+      quote.innerText = "Cliquez sur le bouton pour générer une citation";
+      author.innerText = "-Auteur ";
+    }
   });
 });

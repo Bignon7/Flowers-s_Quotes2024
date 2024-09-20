@@ -214,7 +214,7 @@ export const quotes = {
     {
       quote:
         "A flower does not bloom in a day. Success, like a flower, takes time to blossom.",
-      author: "Inconnu",
+      author: "Unknown",
     },
     {
       quote:
@@ -228,7 +228,7 @@ export const quotes = {
     {
       quote:
         "Every flower is a testament that beauty can grow through adversity.",
-      author: "Inconnu",
+      author: "Unknown",
     },
     {
       quote:
@@ -301,7 +301,7 @@ export const quotes = {
     },
     {
       quote: "Las flores son los puntos de exclamación de la naturaleza.",
-      author: "Inconnu",
+      author: "Desconocido",
     },
     {
       quote: "Las flores son el abecedario de los ángeles.",
@@ -332,7 +332,7 @@ export const quotes = {
     {
       quote:
         "Cada flor es un testimonio de que la belleza puede crecer a través de la adversidad.",
-      author: "Inconnu",
+      author: "Desconocido",
     },
     {
       quote: "La paciencia es una flor que no crece en todos los jardines.",
@@ -341,7 +341,7 @@ export const quotes = {
     {
       quote:
         "Una flor no florece en un día. El éxito, como una flor, lleva tiempo para florecer.",
-      author: "Inconnu",
+      author: "Desconocido",
     },
     {
       quote:
